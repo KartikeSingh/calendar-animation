@@ -238,81 +238,101 @@ export function Home() {
                             />
                         </div>
                     </div>
-                    
+
                     <div className="row">
-                    <div>
-                        <p style={{ color: settings.colors.text.secondary }}>
-                            Screen Background
-                        </p>
-                        <ChromePicker
-                            className="colorPicker"
-                            color={settings.colors.background.global}
-                            onChange={(color) =>
-                                dispatch({
-                                    payload: color.hex,
-                                    type: "SET_BACKGROUND_COLOR_GLOBAL",
-                                    refresh,
-                                })
-                            }
-                            disableAlpha
-                        />
-                    </div>
-                    <div>
-                        <p style={{ color: settings.colors.text.secondary }}>
-                            Calendar Primary BG
-                        </p>
-                        <ChromePicker
-                            className="colorPicker"
-                            color={settings.colors.background.calendar.primary}
-                            onChange={(color) =>
-                                dispatch({
-                                    payload: color.hex,
-                                    type: "SET_BACKGROUND_COLOR_CALENDAR_PRIMARY",
-                                    refresh,
-                                })
-                            }
-                            disableAlpha
-                        />
-                    </div>
+                        <div>
+                            <p
+                                style={{
+                                    color: settings.colors.text.secondary,
+                                }}
+                            >
+                                Screen Background
+                            </p>
+                            <ChromePicker
+                                className="colorPicker"
+                                color={settings.colors.background.global}
+                                onChange={(color) =>
+                                    dispatch({
+                                        payload: color.hex,
+                                        type: "SET_BACKGROUND_COLOR_GLOBAL",
+                                        refresh,
+                                    })
+                                }
+                                disableAlpha
+                            />
+                        </div>
+                        <div>
+                            <p
+                                style={{
+                                    color: settings.colors.text.secondary,
+                                }}
+                            >
+                                Calendar Primary BG
+                            </p>
+                            <ChromePicker
+                                className="colorPicker"
+                                color={
+                                    settings.colors.background.calendar.primary
+                                }
+                                onChange={(color) =>
+                                    dispatch({
+                                        payload: color.hex,
+                                        type: "SET_BACKGROUND_COLOR_CALENDAR_PRIMARY",
+                                        refresh,
+                                    })
+                                }
+                                disableAlpha
+                            />
+                        </div>
                     </div>
                     <div className="row">
-                    <div>
-                        <p style={{ color: settings.colors.text.secondary }}>
-                            Calendar Secondary BG
-                        </p>
-                        <ChromePicker
-                            className="colorPicker"
-                            color={
-                                settings.colors.background.calendar.secondary
-                            }
-                            onChange={(color) =>
-                                dispatch({
-                                    payload: color.hex,
-                                    type: "SET_BACKGROUND_COLOR_CALENDAR_SECONDARY",
-                                    refresh,
-                                })
-                            }
-                            disableAlpha
-                        />
+                        <div>
+                            <p
+                                style={{
+                                    color: settings.colors.text.secondary,
+                                }}
+                            >
+                                Calendar Secondary BG
+                            </p>
+                            <ChromePicker
+                                className="colorPicker"
+                                color={
+                                    settings.colors.background.calendar
+                                        .secondary
+                                }
+                                onChange={(color) =>
+                                    dispatch({
+                                        payload: color.hex,
+                                        type: "SET_BACKGROUND_COLOR_CALENDAR_SECONDARY",
+                                        refresh,
+                                    })
+                                }
+                                disableAlpha
+                            />
+                        </div>
+                        <div>
+                            <p
+                                style={{
+                                    color: settings.colors.text.secondary,
+                                }}
+                            >
+                                Text Primary
+                            </p>
+                            <ChromePicker
+                                className="colorPicker"
+                                color={settings.colors.text.primary}
+                                onChange={(color) =>
+                                    dispatch({
+                                        payload: color.hex,
+                                        type: "SET_TEXT_COLOR_PRIMARY",
+                                        refresh,
+                                    })
+                                }
+                                disableAlpha
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <p style={{ color: settings.colors.text.secondary }}>
-                            Text Primary
-                        </p>
-                        <ChromePicker
-                            className="colorPicker"
-                            color={settings.colors.text.primary}
-                            onChange={(color) =>
-                                dispatch({
-                                    payload: color.hex,
-                                    type: "SET_TEXT_COLOR_PRIMARY",
-                                    refresh,
-                                })
-                            }
-                            disableAlpha
-                        />
-                    </div>
-                    </div>
+                    <div className="row">
                     <div>
                         <p style={{ color: settings.colors.text.secondary }}>
                             Text Secondary
@@ -329,6 +349,7 @@ export function Home() {
                             }
                             disableAlpha
                         />
+                    </div>
                     </div>
                 </div>
                 <div>
