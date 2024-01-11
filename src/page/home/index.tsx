@@ -238,6 +238,8 @@ export function Home() {
                             />
                         </div>
                     </div>
+                    
+                    <div className="row">
                     <div>
                         <p style={{ color: settings.colors.text.secondary }}>
                             Screen Background
@@ -272,6 +274,8 @@ export function Home() {
                             disableAlpha
                         />
                     </div>
+                    </div>
+                    <div className="row">
                     <div>
                         <p style={{ color: settings.colors.text.secondary }}>
                             Calendar Secondary BG
@@ -307,6 +311,7 @@ export function Home() {
                             }
                             disableAlpha
                         />
+                    </div>
                     </div>
                     <div>
                         <p style={{ color: settings.colors.text.secondary }}>
